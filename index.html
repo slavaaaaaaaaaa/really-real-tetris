@@ -1,0 +1,51 @@
+---
+layout: default
+title: Really Real Tetris - Physics Edition
+---
+
+<div class="game-container">
+  <div class="sidebar">
+    <h1>Really Real Tetris</h1>
+    <div class="stats">
+      <div>Score: <span id="score">0</span></div>
+      <div>Lines: <span id="lines">0</span></div>
+      <div>Level: <span id="level">1</span></div>
+    </div>
+    <div class="next-piece">
+      <p>Next Piece:</p>
+      <canvas id="nextCanvas" width="80" height="80"></canvas>
+    </div>
+    <div class="speed-control">
+      <p><strong>Gravity:</strong></p>
+      <input type="range" id="gravitySlider" min="0.001" max="0.1" step="0.005" value="0.008">
+      <p id="gravityValue">0.008x</p>
+      <p><strong>Drop Speed:</strong></p>
+      <input type="range" id="dropSpeedSlider" min="0.05" max="1" step="0.05" value="0.1">
+      <p id="dropSpeedValue">0.1x</p>
+    </div>
+    <div class="controls">
+      <p><strong>Controls:</strong></p>
+      <p>← → : Move</p>
+      <p>↑ ↓ : Rotate</p>
+      <p>Space : Drop Hard</p>
+      <p>P : Pause</p>
+      <button id="startBtn">Start Game</button>
+      <button id="pauseBtn" disabled>Pause</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </div>
+
+  <div class="game-area">
+    <canvas id="gameCanvas" width="300" height="600"></canvas>
+    <div id="gameOverScreen" class="overlay hidden">
+      <div class="overlay-content">
+        <h2>Game Over!</h2>
+        <p>Final Score: <span id="finalScore">0</span></p>
+        <p>Lines Cleared: <span id="finalLines">0</span></p>
+        <button id="restartBtn">Play Again</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="{{ '/assets/js/game.js' | relative_url }}"></script>

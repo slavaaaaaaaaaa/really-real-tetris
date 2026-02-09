@@ -1,0 +1,23 @@
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+*.gem
+Gemfile.lock
+
+# Ruby
+.ruby-version
+.ruby-gemset
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node (if used)
+node_modules/
+npm-debug.log
+yarn-error.log

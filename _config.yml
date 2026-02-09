@@ -1,0 +1,14 @@
+title: Really Real Tetris
+description: A physics-based Tetris game where pieces rotate freely and can get stuck
+baseurl: ""
+markdown: kramdown
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+  - Makefile
